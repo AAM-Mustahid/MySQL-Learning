@@ -1,0 +1,16 @@
+INSERT INTO student (ID,NAME,CGPA) VALUES (1,'Mustahid',3.86),(2,'Asif',4.00),(3,'Jahid',3.90),(4,'Anamika',3.70);
+
+SELECT * FROM student;
+SELECT ID from student;
+SELECT ID,NAME,CGPA from student;
+SELECT DISTINCT ID,NAME from student; 
+SELECT COUNT( DISTINCT ID) from student;
+
+
+
+
+SELECT CustomerName FROM `customers` WHERE Country = 'Mexico';
+SELECT * from customers WHERE Country = 'Germany' AND City = 'Berlin';
+SELECT * from customers where CustomerName LIKE 'A%';
+
+SELECT COUNT(City) FROM `customers` WHERE City IN ('London','Madrid');
